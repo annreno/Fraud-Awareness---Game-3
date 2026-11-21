@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Channel Reveal</title>
+<style>
+* { box-sizing: border-box; }
+body { margin:0; min-height:100vh; font-family:Arial,sans-serif; color:white; background:radial-gradient(circle,#12a7ff,#0874ef,#073dbd); display:flex; justify-content:center; align-items:center; padding:25px; }
+.container { width:100%; max-width:1200px; }
+h1 { background:#03166e; display:inline-block; padding:20px 25px; border-radius:15px; font-size:32px; font-weight:bold; font-style:italic; line-height:1.3; }
+.highlight { color:#fff000; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; margin-top:30px; }
+.card { border:none; background:transparent; cursor:pointer; display:flex; flex-direction:column; align-items:center; }
+.icon { width:140px; height:140px; border-radius:50%; background:var(--brand); display:flex; justify-content:center; align-items:center; box-shadow:0 8px 20px rgba(0,0,0,.2); border:3px solid rgba(255,255,255,.3); transition:transform .2s; }
+.card:hover .icon { transform:scale(1.08); }
+.question { font-size:85px; font-weight:bold; color:white; }
+.symbol { display:none; font-size:65px; font-weight:bold; color:white; }
+.label { margin-top:12px; min-width:180px; padding:12px; border-radius:8px; background:#134fc8; font-size:20px; font-weight:bold; text-align:center; }
+.hidden-name { display:inline; }
+.shown-name { display:none; color:#fff; }
+.card.revealed .question { display:none; }
+.card.revealed .symbol { display:inline; }
+.card.revealed .icon { border:3px solid white; }
+.card.revealed .hidden-name { display:none; }
+.card.revealed .shown-name { display:inline; }
+@media(max-width:700px) { .grid { grid-template-columns:repeat(2,1fr); } h1 { font-size:24px; } .icon { width:110px;height:110px;} }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Ano ang mga halimbawa ng hindi legit channels<br>para mag-<span class="highlight">SIM CARD REGISTRATION?</span></h1>
+<div class="grid">
+<button class="card" onclick="reveal(this)" style="--brand:#25D366"><div class="icon"><span class="question">?</span><svg class="symbol" width="60" height="60" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.08-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.11 3.22 5.11 4.52.71.31 1.27.49 1.71.63.72.23 1.37.2 1.89.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/><path fill="currentColor" d="M20.52 3.49A11.78 11.78 0 0 0 12.13 0C5.59 0 .27 5.32.27 11.86c0 2.09.55 4.13 1.58 5.93L.17 23.94l6.29-1.65a11.86 11.86 0 0 0 5.67 1.44h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.24-6.15-3.48-8.38zM12.14 21.73h-.01a9.86 9.86 0 0 1-5.02-1.37l-.36-.21-3.73.98 1-3.64-.24-.37a9.85 9.85 0 0 1-1.51-5.26C2.27 6.43 6.7 2 12.14 2a9.8 9.8 0 0 1 6.97 2.89A9.81 9.81 0 0 1 22 11.87c0 5.44-4.43 9.86-9.86 9.86z"/></svg></div><div class="label"><span class="hidden-name">&nbsp;</span><span class="shown-name">WhatsApp</span></div></button>
+<button class="card" onclick="reveal(this)" style="--brand:#7360B5"><div class="icon"><span class="question">?</span><svg class="symbol" width="65" height="65" viewBox="1 1 22 22" aria-hidden="true" focusable="false"><path d="M7 19v3l3.7-3H16a5.5 5.5 0 0 0 5.5-5.5v-6A5.5 5.5 0 0 0 16 2H8a5.5 5.5 0 0 0-5.5 5.5v6A5.5 5.5 0 0 0 7 19z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path fill="currentColor" d="M7.6 6.4c.4-.3.9-.3 1.2.1l1.7 2.2c.3.4.2.8-.1 1.1l-.8.7c.8 1.6 1.9 2.7 3.5 3.5l.7-.9c.3-.3.7-.4 1.1-.1l2.3 1.6c.4.3.5.8.2 1.2-.8 1.2-1.9 1.6-3.1 1.2-4-1.4-6.7-4.1-8-7.8-.4-1.1.2-2.1 1.3-2.8z"/><path d="M13 5.3a6 6 0 0 1 5.5 5.5M13 7.5a3.8 3.8 0 0 1 3.3 3.3M13 9.6c.7.1 1.1.5 1.2 1.2" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg></div><div class="label"><span class="hidden-name">&nbsp;</span><span class="shown-name">Viber</span></div></button>
+<button class="card" onclick="reveal(this)" style="--brand:#0084FF"><div class="icon"><span class="question">?</span><svg class="symbol" width="65" height="65" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.24 0 0 4.95 0 11.64c0 3.5 1.44 6.52 3.78 8.61.2.18.32.42.33.68l.07 2.14c.03.68.73 1.12 1.35.85l2.38-1.05a.96.96 0 0 1 .64-.04c1.09.3 2.25.45 3.45.45 6.76 0 12-4.95 12-11.64S18.76 0 12 0Z"/><path fill="var(--brand)" d="m4.79 15.05 3.53-5.6a1.8 1.8 0 0 1 2.6-.48l2.8 2.1a.72.72 0 0 0 .87 0l3.78-2.87c.51-.38 1.17.21.83.75l-3.53 5.6a1.8 1.8 0 0 1-2.6.48l-2.8-2.1a.72.72 0 0 0-.87 0l-3.78 2.87c-.5.38-1.17-.21-.83-.75Z"/></svg></div><div class="label"><span class="hidden-name">&nbsp;</span><span class="shown-name">FB Messenger</span></div></button>
+<button class="card" onclick="reveal(this)" style="--brand:#2AABEE"><div class="icon"><span class="question">?</span><svg class="symbol" width="60" height="60" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 1 24 12 0 23l6-11Z"/></svg></div><div class="label"><span class="hidden-name">&nbsp;</span><span class="shown-name">Telegram</span></div></button>
+<button class="card" onclick="reveal(this)" style="--brand:#00AEEF"><div class="icon"><span class="question">?</span><svg class="symbol" width="60" height="60" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><circle cx="3" cy="12" r="3"/><circle cx="12" cy="12" r="3"/><circle cx="21" cy="12" r="3"/></g></svg></div><div class="label"><span class="hidden-name">&nbsp;</span><span class="shown-name">SMS</span></div></button>
+<button class="card" onclick="reveal(this)" style="--brand:#D94B59"><div class="icon"><span class="question">?</span><svg class="symbol" width="60" height="60" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="0.9" y="4.4" width="22.2" height="15.2" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m1.5 5 10.5 8L22.5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div><div class="label"><span class="hidden-name">&nbsp;</span><span class="shown-name">E-mail</span></div></button>
+</div>
+</div>
+<script>function reveal(card) { card.classList.toggle("revealed"); }</script>
+</body>
+</html>
